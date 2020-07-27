@@ -1,3 +1,7 @@
+val n = 3 //variables locales, para ser accedidas en tiempo de compilacion
+//Funciones puras, no usar variables globales var (changeable)
+var n = "n" //mala practica de programacion
+const val N = "name" //variables globales
 fun main(args: Array<String>) {
     println("Hola Mundo")
 
@@ -16,4 +20,13 @@ fun main(args: Array<String>) {
     println(a.minus(b))
     println(a.times(b))
     println(a.div(b))
+
+    println("N es: $n")
+
+    val name = args[0] //Asignado en tiempo de ejecucion
+    //const Asignado en tiempo de ejecucion
+    println("val : $name")
+
+    println(N)
+
 }
